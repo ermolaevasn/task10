@@ -10,6 +10,20 @@ namespace задание10
     {
         static void Main(string[] args)
         {
+            int n;
+            Console.WriteLine("Введите количество чисел n");
+            n = Convert.ToInt32(Console.ReadLine());
+            int[] mas = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("Введите число "+(i+1)+": ");
+                mas[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int i = 0; i < n; i++)
+                Console.Write(mas[i]+"  ");
+
+            Console.ReadKey();
+
         }
     }
 }
